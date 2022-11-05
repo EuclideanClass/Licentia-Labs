@@ -1,0 +1,4 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\licentia-labs-master\Assemblies\LicentiaLabs.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\licentia-labs-master\Source\LicentiaLabs\LicentiaLabs\obj\Debug\LicentiaLabs.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\licentia-labs-master\Source\LicentiaLabs\LicentiaLabs\obj\Debug\LicentiaLabs.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\licentia-labs-master\Source\LicentiaLabs\LicentiaLabs\obj\Debug\LicentiaLabs.dll
