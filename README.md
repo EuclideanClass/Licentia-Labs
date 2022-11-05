@@ -1,6 +1,8 @@
 # Licentia Labs
 
-This project was started by a LoversLab member named Lust Licentia, who is currently missing. I am maintaining the mod in his stead until or unless he returns.
+"This project was started by a LoversLab member named Lust Licentia, who is currently missing. I am maintaining the mod in his stead until or unless he returns."
+
+The person who wrote that has been missing for a while too, so I've temporarily taken over updating this mod. You can access their original Git [here](https://gitgud.io/John-the-Anabaptist/licentia-labs).
 
 ## Features
 
