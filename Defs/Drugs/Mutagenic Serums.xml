@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="LL_SerumBase">
+    <defName>ReverterSerum</defName>
+    <label>reverter serum</label>
+    <description>Reverts a humanoid pawn to have average human parts.</description>
+    <recipeMaker>
+      <researchPrerequisite>ReverterSerum</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+      <workSkill>Intellectual</workSkill>
+      <skillRequirements>
+        <Intellectual>8</Intellectual>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <MarketValue>3000</MarketValue>
+    </statBases>
+    <costList>
+      <HormonalSerum>100</HormonalSerum>
+    </costList>
+    <graphicData>
+      <color>(100,220,100)</color>
+    </graphicData>
+    <comps>
+      <li Class="LicentiaLabs.CompProperties_ReverterSerum"/>
+    </comps>
+  </ThingDef>
+
+  <ThingDef Name="LL_MutagenicSerumBase"
+            ParentName="LL_SerumBase"
+            Abstract="True">
+    <recipeMaker>
+      <researchPrerequisite>MutagenicSerums</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+      <workSkill>Intellectual</workSkill>
+      <skillRequirements>
+        <Intellectual>8</Intellectual>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <HormonalSerum>100</HormonalSerum>
+    </costList>
+    <statBases>
+      <MarketValue>3000</MarketValue>
+    </statBases>
+    <ingestible>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>MutatedParts</hediffDef>
+          <severity>1</severity>
+          <toleranceChemical>HormonalSerum</toleranceChemical>
+        </li>
+        <li Class="IngestionOutcomeDoer_OffsetNeed">
+          <need>Sex</need>
+          <offset>-0.40</offset>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+  </ThingDef>
+
+  <ThingDef ParentName="LL_MutagenicSerumBase">
+    <defName>CanineMutagenicSerum</defName>
+    <label>canine mutagenic serum</label>
+    <description>Gives the user canine genitalia.</description>
+    <graphicData>
+      <color>(220,145,30)</color>
+    </graphicData>
+    <comps>
+      <li Class="LicentiaLabs.CompProperties_MutagenicSerum">
+        <penisDef>DogPenis</penisDef>
+        <vaginaDef>DogVagina</vaginaDef>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="LL_MutagenicSerumBase">
+    <defName>FelineMutagenicSerum</defName>
+    <label>feline mutagenic serum</label>
+    <description>Gives the user feline genitalia.</description>
+    <graphicData>
+      <color>(240,200,30)</color>
+    </graphicData>
+    <comps>
+      <li Class="LicentiaLabs.CompProperties_MutagenicSerum">
+        <penisDef>CatPenis</penisDef>
+        <vaginaDef>CatVagina</vaginaDef>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="LL_MutagenicSerumBase">
+    <defName>EquineMutagenicSerum</defName>
+    <label>equine mutagenic serum</label>
+    <description>Gives the user equine genitalia.</description>
+    <graphicData>
+      <color>(60,40,15)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>4200</MarketValue>
+    </statBases>
+    <costList>
+      <HormonalSerum>140</HormonalSerum>
+    </costList>
+    <comps>
+      <li Class="LicentiaLabs.CompProperties_MutagenicSerum">
+        <penisDef>HorsePenis</penisDef>
+        <vaginaDef>HorseVagina</vaginaDef>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="LL_MutagenicSerumBase">
+    <defName>DraconicMutagenicSerum</defName>
+    <label>draconic mutagenic serum</label>
+    <description>Gives the user draconic genitalia.</description>
+    <graphicData>
+      <color>(25,5,35)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>4500</MarketValue>
+    </statBases>
+    <costList>
+      <HormonalSerum>150</HormonalSerum>
+    </costList>
+    <comps>
+      <li Class="LicentiaLabs.CompProperties_MutagenicSerum">
+        <penisDef>DragonPenis</penisDef>
+        <vaginaDef>DragonVagina</vaginaDef>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="LL_MutagenicSerumBase">
+    <defName>DemonicMutagenicSerum</defName>
+    <label>demonic mutagenic serum</label>
+    <description>Gives the user demonic genitalia and anus.</description>
+    <graphicData>
+      <color>(100,0,30)</color>
+    </graphicData>
+    <costList>
+      <HormonalSerum>200</HormonalSerum>
+    </costList>
+    <statBases>
+      <MarketValue>6000</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="LicentiaLabs.CompProperties_MutagenicSerum">
+        <penisDef>DemonPenis</penisDef>
+        <vaginaDef>DemonVagina</vaginaDef>
+      </li>
+      <li Class="LicentiaLabs.CompProperties_MutagenicSerumSpecial">
+        <anus>true</anus>
+        <anusDef>DemonAnus</anusDef>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="LL_MutagenicSerumBase">
+    <defName>SlimeMutagenicSerum</defName>
+    <label>slime mutagenic serum</label>
+    <description>Gives the user slime breasts, genitalia, and anus.</description>
+    <graphicData>
+      <color>(45,170,40)</color>
+    </graphicData>
+    <costList>
+      <HormonalSerum>250</HormonalSerum>
+    </costList>
+    <statBases>
+      <MarketValue>7500</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="LicentiaLabs.CompProperties_MutagenicSerum">
+        <penisDef>SlimeTentacles</penisDef>
+        <vaginaDef>SlimeVagina</vaginaDef>
+      </li>
+      <li Class="LicentiaLabs.CompProperties_MutagenicSerumSpecial">
+        <anus>true</anus>
+        <anusDef>SlimeAnus</anusDef>
+        <breast>true</breast>
+        <breastDef>SlimeBreasts</breastDef>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="LL_MutagenicSerumBase">
+    <defName>InsectoidMutagenicSerum</defName>
+    <label>insectoid mutagenic serum</label>
+    <description>Gives the user an ovipositor and insectoid anus.</description>
+    <graphicData>
+      <color>(5,5,0)</color>
+    </graphicData>
+    <comps>
+      <li Class="LicentiaLabs.CompProperties_MutagenicSerum">
+        <penisDef>OvipositorM</penisDef>
+        <vaginaDef>OvipositorF</vaginaDef>
+      </li>
+      <li Class="LicentiaLabs.CompProperties_MutagenicSerumSpecial">
+        <anus>true</anus>
+        <anusDef>InsectAnus</anusDef>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="LL_MutagenicSerumBase">
+    <defName>RodentMutagenicSerum</defName>
+    <label>rodent mutagenic serum</label>
+    <description>Gives the user rodent genitalia.</description>
+    <graphicData>
+      <color>(150,80,20)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>1800</MarketValue>
+    </statBases>
+    <costList>
+      <HormonalSerum>60</HormonalSerum>
+    </costList>
+    <comps>
+      <li Class="LicentiaLabs.CompProperties_MutagenicSerum">
+        <penisDef>RodentPenis</penisDef>
+        <vaginaDef>RodentVagina</vaginaDef>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="LL_MutagenicSerumBase">
+    <defName>NarrowMutagenicSerum</defName>
+    <label>narrow mutagenic serum</label>
+    <description>Gives the user narrow genitalia.</description>
+    <graphicData>
+      <color>(130,100,10)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>2400</MarketValue>
+    </statBases>
+    <costList>
+      <HormonalSerum>80</HormonalSerum>
+    </costList>
+    <comps>
+      <li Class="LicentiaLabs.CompProperties_MutagenicSerum">
+        <penisDef>NeedlePenis</penisDef>
+        <vaginaDef>NarrowVagina</vaginaDef>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="LL_MutagenicSerumBase">
+    <defName>CloacalMutagenicSerum</defName>
+    <label>cloacal mutagenic serum</label>
+    <description>Gives the user a cloaca.</description>
+    <graphicData>
+      <color>(220,190,110)</color>
+    </graphicData>
+    <comps>
+      <li Class="LicentiaLabs.CompProperties_MutagenicSerum">
+        <penisDef>CloacalPenis</penisDef>
+        <vaginaDef>CloacalVagina</vaginaDef>
+      </li>
+      <li Class="LicentiaLabs.CompProperties_MutagenicSerumSpecial">
+        <anus>true</anus>
+        <anusDef>CloacalAnus</anusDef>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>MutatedParts</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <description>Description text</description>
+    <label>mutated parts</label>
+    <labelNoun>mutated parts</labelNoun>
+    <defaultLabelColor>(140,0,0)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.25</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>horny</label>
+        <statOffsets>
+          <SexFrequency>0.3</SexFrequency>
+          <Vulnerability>0.2</Vulnerability>
+        </statOffsets>
+      </li>
+      <li>
+        <label>growing</label>
+        <minSeverity>0.90</minSeverity>
+        <statOffsets>
+          <SexFrequency>-0.7</SexFrequency>
+          <Vulnerability>0.3</Vulnerability>
+        </statOffsets>
+        <painOffset>0.1</painOffset>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThoughtDef>
+    <defName>MutatedParts</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>MutatedParts</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>mutated parts</label>
+        <description>I feel so lovely and warm... and these new parts! I must try them!</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+      <li>
+        <label>growing mutated parts</label>
+        <description>What's happenning to me? I feel all warped inside.</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

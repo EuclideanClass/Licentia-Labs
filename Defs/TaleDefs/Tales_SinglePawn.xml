@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <TaleDef>
+    <defName>VomitedCum</defName>
+    <label>vomited cum</label>
+    <taleClass>Tale_SinglePawn</taleClass>
+    <type>Volatile</type>
+    <baseInterest>0.25</baseInterest>
+    <ignoreChance>0.5</ignoreChance>
+    <rulePack>
+      <rulesStrings>
+        <li>tale_noun->[PAWN_nameDef]'s vomiting cum</li>
+        <li>image->[PAWN_nameFull] spewing cum onto the ground [circumstance_group]</li>
+        <li>image->[PAWN_nameFull] looking groggy and covered with cum [circumstance_group]</li>
+        <li>image->[PAWN_nameFull] doubled over and retching cum onto the floor [circumstance_group]</li>
+        <li>image->[PAWN_nameFull] on [PAWN_possessive] knees, vomiting cum on the floor [circumstance_group]</li>
+        <li>circumstance_phrase->while looking strained</li>
+        <li>circumstance_phrase->while cum streams from [PAWN_possessive] nose</li>
+        <li>desc_sentence->[PAWN_pronoun] seems totally unaware of what is around [PAWN_objective].</li>
+        <li>desc_sentence->Cum burbles from [PAWN_possessive] mouth.</li>
+        <li>desc_sentence->[PAWN_pronoun] is nearly unconscious, [PAWN_possessive] tongue lolling out, cum dripping from [PAWN_possessive] mouth.</li>
+        <li>desc_sentence->[PAWN_pronoun] is convulsing violently.</li>
+        <li>desc_sentence->[PAWN_pronoun] looks exhausted.</li>
+        <li>desc_sentence->[PAWN_pronoun] seems to be trying to laugh, despite the circumstances.</li>
+        <li>desc_sentence->[PAWN_pronoun] looks almost deflated, as though totally emptied by the intense cum vomiting.</li>
+        <li>desc_sentence->[PAWN_pronoun] is surrounded by an artistically rendered halo of cum.</li>
+        <li>desc_sentence->A [Animal] is eating from the trail of cum in the background.</li>
+      </rulesStrings>
+    </rulePack>
+  </TaleDef>
+
+</Defs>

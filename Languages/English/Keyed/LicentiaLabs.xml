@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <LL_BreastsSizeIncrease>{0}'s breasts have increased in size.</LL_BreastsSizeIncrease>
+  <LL_BreastsSizeDecrease>{0}'s breasts have decreased in size.</LL_BreastsSizeDecrease>
+  <LL_BreastsMaxSize>{0}'s breasts are already the maximum size.</LL_BreastsMaxSize>
+  <LL_BreastsMinSize>{0}'s breasts are already the minimum size.</LL_BreastsMinSize>
+  
+  <LL_PenisSizeIncrease>{0}'s penis has increased in size.</LL_PenisSizeIncrease>
+  <LL_PenisSizeDecrease>{0}'s penis has decreased in size.</LL_PenisSizeDecrease>
+  <LL_PenisMaxSize>{0}'s penis is already the maximum size.</LL_PenisMaxSize>
+  <LL_PenisMinSize>{0}'s penis is already the minimum size.</LL_PenisMinSize>
+  
+  <LL_VaginaSizeIncrease>{0}'s vagina has increased in size.</LL_VaginaSizeIncrease>
+  <LL_VaginaSizeDecrease>{0}'s vagina has decreased in size.</LL_VaginaSizeDecrease>
+  <LL_VaginaMaxSize>{0}'s vagina is already the maximum size.</LL_VaginaMaxSize>
+  <LL_VaginaMinSize>{0}'s vagina is already the minimum size.</LL_VaginaMinSize>
+  
+  <LL_AnusMinSize>{0}'s anus is already the minimum size.</LL_AnusMinSize>
+  
+  <LL_CumAltered>{0}'s cum production have been altered.</LL_CumAltered>
+  <LL_GenitalsAltered>{0}'s genitals have been altered.</LL_GenitalsAltered>
+  <LL_BreastsAltered>{0}'s breasts have been altered.</LL_BreastsAltered>
+  <LL_AnusAltered>{0}'s anus has been altered.</LL_AnusAltered>
+  
+  <LL_GenitalsNotAlterable>{0}'s genitals are unalterable.</LL_GenitalsNotAlterable>
+  <LL_BreastsNotAlterable>{0}'s breasts are unalterable.</LL_BreastsNotAlterable>
+  <LL_AnusNotAlterable>{0}'s anus is unalterable.</LL_AnusNotAlterable>
+  
+  <LL_BreastsSwapped>{0}'s breasts have been swapped.</LL_BreastsSwapped>
+  <LL_GenitalsSwapped>{0}'s genitals have been swapped.</LL_GenitalsSwapped>
+  
+  <LL_BreastsReverted>{0}'s breasts have been reverted.</LL_BreastsReverted>
+  <LL_GenitalsReverted>{0}'s genitals have been reverted.</LL_GenitalsReverted>
+  <LL_AnusReverted>{0}'s anus has been reverted.</LL_AnusReverted>
+  <LL_Reverted>{0}'s has reverted to an average sexual physique.</LL_Reverted>
+  
+  <LL_PsycheAltered>{0}'s psyche has been altered.</LL_PsycheAltered>
+  
+  <LL_VaginaStretched>{0}'s vagina has been stretched.</LL_VaginaStretched>
+  <LL_AnusStretched>{0}'s anus has been stretched.</LL_AnusStretched>
+  <LL_OrificeStretched>{0}'s {1} has been stretched.</LL_OrificeStretched>
+  
+  <LL_MadeFuta>{0} is now a futa.</LL_MadeFuta>
+  
+</LanguageData>

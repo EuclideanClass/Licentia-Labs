@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <HediffDef>
+    <defName>Prolapse</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>prolapse</label>
+    <labelNoun>a prolapse</labelNoun>
+    <description>The inside of this orifice has been temporarily been turned out, exposing tender inner flesh. Intimate activity may be difficult for a time.</description>
+    <defaultLabelColor>(140,0,0)</defaultLabelColor>
+    <initialSeverity>1.0</initialSeverity>
+    <chanceToCauseNoPain>0.3</chanceToCauseNoPain>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.3</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>recovering</label>
+        <statOffsets>
+          <!-- <SexAbility>-0.5</SexAbility> -->
+          <Vulnerability>-0.2</Vulnerability>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.10</offset>
+          </li>
+        </capMods>
+        <painOffset>0.1</painOffset>
+      </li>
+      <li>
+        <label>painful</label>
+        <minSeverity>0.75</minSeverity>
+        <statOffsets>
+          <!-- <SexAbility>-1.0</SexAbility> -->
+          <Vulnerability>-0.3</Vulnerability>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.20</offset>
+          </li>
+        </capMods>
+        <painOffset>0.2</painOffset>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>ExtremeProlapse</defName>
+    <label>prolapse</label>
+    <labelNoun>an extreme prolapse</labelNoun>
+    <description>The inside of this orifice has been horribly turned out, exposing tender inner flesh. Intimate activity may be impossible until it is repaired by surgery.</description>
+    <defaultLabelColor>(140,0,0)</defaultLabelColor>
+    <initialSeverity>1.0</initialSeverity>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <stages>
+      <li>
+        <label>requires surgery</label>
+        <statOffsets>
+          <!-- <SexAbility>-1.0</SexAbility> -->
+          <Vulnerability>-0.3</Vulnerability>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.20</offset>
+          </li>
+        </capMods>
+        <painOffset>0.3</painOffset>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef ParentName="InjuryBase">
+    <defName>StretchTear</defName>
+    <label>tear</label>
+    <labelNoun>a tear</labelNoun>
+    <description>Sex with large penetrating objects to smaller orifices can result in painful tearing.</description>
+    <comps>
+      <li Class="HediffCompProperties_TendDuration">
+        <labelTendedWell>sutured</labelTendedWell>
+        <labelTendedWellInner>sutured</labelTendedWellInner>
+        <labelSolidTendedWell>set</labelSolidTendedWell>
+      </li>
+      <li Class="HediffCompProperties_Infecter">
+        <infectionChance>0.05</infectionChance>
+      </li>
+      <li Class="HediffCompProperties_GetsPermanent">
+        <permanentLabel>stretch scar</permanentLabel>
+      </li>
+    </comps>
+    <injuryProps>
+      <painPerSeverity>0.125</painPerSeverity>
+      <averagePainPerSeverityPermanent>0.00625</averagePainPerSeverityPermanent>
+      <bleedRate>0.06</bleedRate>
+      <canMerge>false</canMerge>
+      <destroyedLabel>Torn</destroyedLabel>
+      <destroyedOutLabel>Torn</destroyedOutLabel>
+    </injuryProps>
+  </HediffDef>
+
+  <HediffDef ParentName="InjuryBase">
+    <defName>CervixBruise</defName>
+    <label>cervix punched</label>
+    <labelNoun>a bruise on the cervix</labelNoun>
+    <description>A bruise on the cervix.</description>
+    <comps>
+      <li Class="HediffCompProperties_TendDuration">
+        <labelTendedWell>tended</labelTendedWell>
+        <labelTendedWellInner>tended</labelTendedWellInner>
+        <labelSolidTendedWell>set</labelSolidTendedWell>
+      </li>
+    </comps>
+    <injuryProps>
+      <painPerSeverity>0.15</painPerSeverity>
+      <averagePainPerSeverityPermanent>0.00625</averagePainPerSeverityPermanent>
+      <canMerge>false</canMerge>
+      <destroyedLabel>Destroyed</destroyedLabel>
+    </injuryProps>
+  </HediffDef>
+
+</Defs>

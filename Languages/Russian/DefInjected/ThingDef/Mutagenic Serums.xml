@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<ReverterSerum.label>сыворотка возврата</ReverterSerum.label>
+	<ReverterSerum.description>Возвращает части тела в гуманоидное состояние.</ReverterSerum.description>
+	<ReverterSerum.ingestible.ingestCommandString>Выпить {0}</ReverterSerum.ingestible.ingestCommandString>
+	<ReverterSerum.ingestible.ingestReportString>Пьет {0}</ReverterSerum.ingestible.ingestReportString>
+
+	<CanineMutagenicSerum.label>мутагенная сыворотка - собака</CanineMutagenicSerum.label>
+	<CanineMutagenicSerum.description>Дает собачьи гениталии пользователю.</CanineMutagenicSerum.description>
+	<CanineMutagenicSerum.ingestible.ingestCommandString>Выпить {0}</CanineMutagenicSerum.ingestible.ingestCommandString>
+	<CanineMutagenicSerum.ingestible.ingestReportString>Пьет {0}</CanineMutagenicSerum.ingestible.ingestReportString>
+
+	<FelineMutagenicSerum.label>мутагенная сыворотка - кошка</FelineMutagenicSerum.label>
+	<FelineMutagenicSerum.description>Дает кошачьи гениталии пользователю.</FelineMutagenicSerum.description>
+	<FelineMutagenicSerum.ingestible.ingestCommandString>Выпить {0}</FelineMutagenicSerum.ingestible.ingestCommandString>
+	<FelineMutagenicSerum.ingestible.ingestReportString>Пьет {0}</FelineMutagenicSerum.ingestible.ingestReportString>
+
+	<EquineMutagenicSerum.label>мутагенная сыворотка - лошадь</EquineMutagenicSerum.label>
+	<EquineMutagenicSerum.description>Дает лошадиные гениталии пользователю.</EquineMutagenicSerum.description>
+	<EquineMutagenicSerum.ingestible.ingestCommandString>Выпить {0}</EquineMutagenicSerum.ingestible.ingestCommandString>
+	<EquineMutagenicSerum.ingestible.ingestReportString>Пьет {0}</EquineMutagenicSerum.ingestible.ingestReportString>
+
+	<DraconicMutagenicSerum.label>мутагенная сыворотка - дракон</DraconicMutagenicSerum.label>
+	<DraconicMutagenicSerum.description>Дает драконьи гениталии пользователю.</DraconicMutagenicSerum.description>
+	<DraconicMutagenicSerum.ingestible.ingestCommandString>Выпить {0}</DraconicMutagenicSerum.ingestible.ingestCommandString>
+	<DraconicMutagenicSerum.ingestible.ingestReportString>Пьет {0}</DraconicMutagenicSerum.ingestible.ingestReportString>
+
+	<DemonicMutagenicSerum.label>мутагенная сыворотка - демон</DemonicMutagenicSerum.label>
+	<DemonicMutagenicSerum.description>Дает демонические гениталии и анус пользователю.</DemonicMutagenicSerum.description>
+	<DemonicMutagenicSerum.ingestible.ingestCommandString>Выпить {0}</DemonicMutagenicSerum.ingestible.ingestCommandString>
+	<DemonicMutagenicSerum.ingestible.ingestReportString>Пьет {0}</DemonicMutagenicSerum.ingestible.ingestReportString>
+
+	<SlimeMutagenicSerum.label>мутагенная сыворотка - слизень</SlimeMutagenicSerum.label>
+	<SlimeMutagenicSerum.description>Дает слизневые гениталии, грудь и анус пользователю.</SlimeMutagenicSerum.description>
+	<SlimeMutagenicSerum.ingestible.ingestCommandString>Выпить {0}</SlimeMutagenicSerum.ingestible.ingestCommandString>
+	<SlimeMutagenicSerum.ingestible.ingestReportString>Пьет {0}</SlimeMutagenicSerum.ingestible.ingestReportString>
+
+	<InsectoidMutagenicSerum.label>мутагенная сыворотка - инсектоид</InsectoidMutagenicSerum.label>
+	<InsectoidMutagenicSerum.description>Gives the user an ovipositor and insectoid anus.</InsectoidMutagenicSerum.description>
+	<InsectoidMutagenicSerum.ingestible.ingestCommandString>Выпить {0}</InsectoidMutagenicSerum.ingestible.ingestCommandString>
+	<InsectoidMutagenicSerum.ingestible.ingestReportString>Пьет {0}</InsectoidMutagenicSerum.ingestible.ingestReportString>
+
+	<RodentMutagenicSerum.label>мутагенная сыворотка - грызун</RodentMutagenicSerum.label>
+	<RodentMutagenicSerum.description>Дает гениталии грызуна пользователю.</RodentMutagenicSerum.description>
+	<RodentMutagenicSerum.ingestible.ingestCommandString>Выпить {0}</RodentMutagenicSerum.ingestible.ingestCommandString>
+	<RodentMutagenicSerum.ingestible.ingestReportString>Пьет {0}</RodentMutagenicSerum.ingestible.ingestReportString>
+
+	<NarrowMutagenicSerum.label>мутагенная сыворотка - узкий</NarrowMutagenicSerum.label>
+	<NarrowMutagenicSerum.description>Дает узкие гениталии пользователю.</NarrowMutagenicSerum.description>
+	<NarrowMutagenicSerum.ingestible.ingestCommandString>Выпить {0}</NarrowMutagenicSerum.ingestible.ingestCommandString>
+	<NarrowMutagenicSerum.ingestible.ingestReportString>Пьет {0}</NarrowMutagenicSerum.ingestible.ingestReportString>
+
+	<CloacalMutagenicSerum.label>мутагенная сыворотка - клоака</CloacalMutagenicSerum.label>
+	<CloacalMutagenicSerum.description>Дает клоаку пользователю.</CloacalMutagenicSerum.description>
+	<CloacalMutagenicSerum.ingestible.ingestCommandString>Выпить {0}</CloacalMutagenicSerum.ingestible.ingestCommandString>
+	<CloacalMutagenicSerum.ingestible.ingestReportString>Пьет {0}</CloacalMutagenicSerum.ingestible.ingestReportString>
+
+
+</LanguageData>

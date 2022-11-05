@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<BreastExpansionSerum.label>сыворотка увелечения груди</BreastExpansionSerum.label>
+	<BreastExpansionSerum.description>Увеличивает размер груди пользователя.</BreastExpansionSerum.description>
+	<BreastExpansionSerum.ingestible.ingestCommandString>Выпить {0}</BreastExpansionSerum.ingestible.ingestCommandString>
+	<BreastExpansionSerum.ingestible.ingestReportString>Пьет {0}</BreastExpansionSerum.ingestible.ingestReportString>
+
+	<BreastReductionSerum.label>сыворотка уменьшения груди</BreastReductionSerum.label>
+	<BreastReductionSerum.description>Уменьшает размер груди пользователя.</BreastReductionSerum.description>
+	<BreastReductionSerum.ingestible.ingestCommandString>Выпить {0}</BreastReductionSerum.ingestible.ingestCommandString>
+	<BreastReductionSerum.ingestible.ingestReportString>Пьет {0}</BreastReductionSerum.ingestible.ingestReportString>
+
+	<GenitalExtrusionSerum.label>сыворотка увелечения гениталий</GenitalExtrusionSerum.label>
+	<GenitalExtrusionSerum.description>Увеличивает размер пениса пользователя. Как вариант, это уменьшит размер вагины.</GenitalExtrusionSerum.description>
+	<GenitalExtrusionSerum.ingestible.ingestCommandString>Выпить {0}</GenitalExtrusionSerum.ingestible.ingestCommandString>
+	<GenitalExtrusionSerum.ingestible.ingestReportString>Пьет {0}.</GenitalExtrusionSerum.ingestible.ingestReportString>
+
+	<GenitalRetractionSerum.label>сыворотка уменьшения гениталий</GenitalRetractionSerum.label>
+	<GenitalRetractionSerum.description>Уменьшает размер пениса пользователя. Как вариант, это увеличит размер вагины..</GenitalRetractionSerum.description>
+	<GenitalRetractionSerum.ingestible.ingestCommandString>Выпить {0}</GenitalRetractionSerum.ingestible.ingestCommandString>
+	<GenitalRetractionSerum.ingestible.ingestReportString>Пьет {0}</GenitalRetractionSerum.ingestible.ingestReportString>
+
+	<CumIncreaseSerum.label>сыворотка Сперма+</CumIncreaseSerum.label>
+	<CumIncreaseSerum.description>Увеличивает объем производства спермы.</CumIncreaseSerum.description>
+	<CumIncreaseSerum.ingestible.ingestCommandString>Выпить {0}</CumIncreaseSerum.ingestible.ingestCommandString>
+	<CumIncreaseSerum.ingestible.ingestReportString>Пьет {0}</CumIncreaseSerum.ingestible.ingestReportString>
+
+	<CumDecreaseSerum.label>сыворотка Сперма-</CumDecreaseSerum.label>
+	<CumDecreaseSerum.description>Уменьшает объем производства спермы.</CumDecreaseSerum.description>
+	<CumDecreaseSerum.ingestible.ingestCommandString>Выпить {0}</CumDecreaseSerum.ingestible.ingestCommandString>
+	<CumDecreaseSerum.ingestible.ingestReportString>Пьет {0}</CumDecreaseSerum.ingestible.ingestReportString>
+
+	<TighteningSerumAnal.label>анальная подтягивающая сыворотка</TighteningSerumAnal.label>
+	<TighteningSerumAnal.description>Подтягивает анус пользователя...</TighteningSerumAnal.description>
+	<TighteningSerumAnal.ingestible.ingestCommandString>Выпить {0}</TighteningSerumAnal.ingestible.ingestCommandString>
+	<TighteningSerumAnal.ingestible.ingestReportString>Пьет {0}</TighteningSerumAnal.ingestible.ingestReportString>
+
+
+</LanguageData>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<Elasticised.label>эластичный</Elasticised.label>
+	<Elasticised.description>Description text</Elasticised.description>
+	<Elasticised.stages.0.label>стертый</Elasticised.stages.0.label>
+	<Elasticised.stages.1.label>эластичный</Elasticised.stages.1.label>
+	<Elasticised.stages.2.label>скользкий</Elasticised.stages.2.label>
+
+	<Enlarged.label>увеличение гениталий</Enlarged.label>
+	<Enlarged.description>Description text</Enlarged.description>
+	<Enlarged.stages.0.label>увеличенный</Enlarged.stages.0.label>
+	<Enlarged.stages.1.label>набухший</Enlarged.stages.1.label>
+
+	<Diminished.label>уменьшение гениталий</Diminished.label>
+	<Diminished.description>Description text</Diminished.description>
+	<Diminished.stages.0.label>уменьшенный</Diminished.stages.0.label>
+	<Diminished.stages.1.label>сильно уменьшенный</Diminished.stages.1.label>
+
+	<Untearable.label>un-tearable</Untearable.label>
+	<Untearable.description>Description text</Untearable.description>
+	<Untearable.stages.0.label>wearing off</Untearable.stages.0.label>
+
+
+</LanguageData>

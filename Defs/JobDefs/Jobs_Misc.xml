@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--========= General ============-->
+
+  <JobDef>
+    <defName>VomitCum</defName>
+    <driverClass>JobDriver_VomitCum</driverClass>
+    <playerInterruptible>false</playerInterruptible>
+    <casualInterruptible>false</casualInterruptible>
+    <reportString>vomiting cum.</reportString>
+    <suspendable>false</suspendable>
+  </JobDef>
+  
+</Defs>

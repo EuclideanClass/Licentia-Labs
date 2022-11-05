@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThoughtDef>
+    <defName>Cumflation</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>Cumflation</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <visible>false</visible>
+      </li>
+      <li>
+        <label>slightly cumflated</label>
+        <description>It's a little strange, but it's not unpleasant.</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+      <li>
+        <label>moderately cumflated</label>
+        <description>There's a lot of cum inside, and it hurts a little.</description>
+        <baseMoodEffect>0</baseMoodEffect>
+      </li>
+      <li>
+        <label>intensely cumflated</label>
+        <description>Ughhh... my guts are full of cum and it's a starting to get painful.</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+      <li>
+        <label>extremely cumflated</label>
+        <description>Ahhh... my belly hurts...</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+    </stages>
+    <nullifyingTraits>
+	  <li>LikesCumflation</li>
+      <li>Masochist</li>
+    </nullifyingTraits>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>CumflationEnjoyed</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>Cumflation</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <visible>false</visible>
+      </li>
+      <li>
+        <label>enjoying being slightly cumflated</label>
+        <description>It's odd, I sort of like it...</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+      <li>
+        <label>enjoying being moderately cumflated</label>
+        <description>I'm pleasantly full of cum.</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+      <li>
+        <label>enjoying being intensely cumflated</label>
+        <description>Mmm... more...</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+      <li>
+        <label>enjoying being extremely cumflated</label>
+        <description>Ughhh... Mmm...</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+    </stages>
+    <requiredTraits>
+	  <li>LikesCumflation</li>
+      <li>Masochist</li>
+    </requiredTraits>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>Cumstuffed</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>Cumstuffed</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <visible>false</visible>
+      </li>
+      <li>
+        <label>bloated with cum</label>
+        <description>I feel full.</description>
+        <baseMoodEffect>0</baseMoodEffect>
+      </li>
+      <li>
+        <label>full of cum</label>
+        <description>I can't drink another drop.</description>
+        <baseMoodEffect>-1</baseMoodEffect>
+      </li>
+      <li>
+        <label>stuffed with cum</label>
+        <description>Hrkkk... I'm gonna throw up...</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+      <li>
+        <label>overstuffed with cum</label>
+        <description>Hghhh... *urp*, my stomach hurts...</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+    </stages>
+    <nullifyingTraits>
+	  <li>LikesCumflation</li>
+      <li>Masochist</li>
+    </nullifyingTraits>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>CumstuffedEnjoyed</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>Cumstuffed</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <visible>false</visible>
+      </li>
+      <li>
+        <label>enjoying being bloated with cum</label>
+        <description>I can feel it sloshing inside me.</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+      <li>
+        <label>enjoying being full of cum</label>
+        <description>I can still take more!</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+      <li>
+        <label>enjoying being stuffed with cum</label>
+        <description>Mmm... it hurts but I still want more.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+      <li>
+        <label>enjoying being overstuffed with cum</label>
+        <description>Ughhh... more...</description>
+        <baseMoodEffect>7</baseMoodEffect>
+      </li>
+    </stages>
+    <requiredTraits>
+	  <li>LikesCumflation</li>
+      <li>Masochist</li>
+    </requiredTraits>
+  </ThoughtDef>
+
+</Defs>

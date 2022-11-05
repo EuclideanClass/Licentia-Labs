@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<RepairProlapse.label>восстановить пролапс</RepairProlapse.label>
+	<RepairProlapse.description>Восстанавливает пролапс.</RepairProlapse.description>
+	<RepairProlapse.jobString>Восстанавливает пролапс</RepairProlapse.jobString>
+	<RepairProlapse.successfullyRemovedHediffMessage>{0} успешно восстановил пролапс {1}.</RepairProlapse.successfullyRemovedHediffMessage>
+
+	<RepairExtremeProlapse.label>восстановить экстремальный пролапс</RepairExtremeProlapse.label>
+	<RepairExtremeProlapse.description>Хирургическое восстановление пролапса.</RepairExtremeProlapse.description>
+	<RepairExtremeProlapse.jobString>Восстанавливает пролапс</RepairExtremeProlapse.jobString>
+	<RepairExtremeProlapse.successfullyRemovedHediffMessage>{0} успешно восстановил пролапс {1}.</RepairExtremeProlapse.successfullyRemovedHediffMessage>
+
+
+</LanguageData>

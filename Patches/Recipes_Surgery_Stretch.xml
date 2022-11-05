@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Human"]/recipes</xpath>
+		<value>
+			<li>RepairProlapse</li>
+			<li>RepairExtremeProlapse</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[@Name="AnimalThingBase"]/recipes</xpath>
+		<value>
+			<li>RepairProlapse</li>
+			<li>RepairExtremeProlapse</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Humanoid Alien Races 2.0</li>
+		</mods>
+		<match Class="PatchOperationConditional">
+			<xpath>/Defs/AlienRace.ThingDef_AlienRace/alienRace/generalSettings/humanRecipeImport[text()="false"]</xpath>
+			<match Class="PatchOperationConditional">
+				<xpath>/Defs/AlienRace.ThingDef_AlienRace/recipes</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>/Defs/AlienRace.ThingDef_AlienRace/recipes</xpath>
+					<value>
+						<li>RepairProlapse</li>
+						<li>RepairExtremeProlapse</li>
+					</value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/AlienRace.ThingDef_AlienRace/recipes</xpath>
+					<value>
+						<recipes>
+							<li>RepairProlapse</li>
+							<li>RepairExtremeProlapse</li>
+						</recipes>
+					</value>
+				</nomatch>
+			</match>
+		</match>
+	</Operation>
+</Patch>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="LL_SerumBase"
+            ParentName="MakeableDrugBase"
+            Abstract="True">
+    <thingCategories>
+      <li>Serums</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Things/Item/Serum</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.85</drawSize>
+      <color>(170,240,240)</color>
+    </graphicData>
+    <statBases>
+      <Mass>0.1</Mass>
+      <MaxHitPoints>30</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <MarketValue>100</MarketValue>
+      <DeteriorationRate>1</DeteriorationRate>
+    </statBases>
+    <techLevel>Industrial</techLevel>
+    <tradeTags>
+      <li>TechHediff</li>
+      <li>LicentiaLabs</li>
+    </tradeTags>
+    <ingestible>
+      <preferability>NeverForNutrition</preferability>
+      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+      <chairSearchRadius>8</chairSearchRadius>
+      <baseIngestTicks>240</baseIngestTicks>
+      <nurseable>true</nurseable>
+      <foodType>Fluid, Processed</foodType>
+      <drugCategory>Medical</drugCategory>
+      <ingestSound>Ingest_Drink</ingestSound>
+      <ingestHoldUsesTable>false</ingestHoldUsesTable>
+      <ingestCommandString>Drink {0}</ingestCommandString>
+      <ingestReportString>Drinking {0}.</ingestReportString>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_OffsetNeed">
+          <need>Sex</need>
+          <offset>-0.1</offset>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>HormonalSerumTolerance</hediffDef>
+          <severity>0.03</severity>
+          <divideByBodySize>true</divideByBodySize>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <chemical>HormonalSerum</chemical>
+        <addictiveness>0.02</addictiveness>
+        <minToleranceToAddict>0.10</minToleranceToAddict>
+        <existingAddictionSeverityOffset>0.15</existingAddictionSeverityOffset>
+        <needLevelOffset>1</needLevelOffset>
+        <listOrder>110</listOrder>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ChemicalDef>
+    <defName>HormonalSerum</defName>
+    <label>hormonal serum</label>
+    <addictionHediff>HormonalSerumAddiction</addictionHediff>
+    <toleranceHediff>HormonalSerumTolerance</toleranceHediff>
+    <onGeneratedAddictedToleranceChance>0.6</onGeneratedAddictedToleranceChance>
+  </ChemicalDef>
+
+  <NeedDef ParentName="DrugAddictionNeedBase">
+    <defName>Chemical_HormonalSerum</defName>
+    <needClass>Need_Chemical</needClass>
+    <label>hormonal serum</label>
+    <description>Because of a hormonal serum addiction, this person needs to regularly consume the drug to avoid withdrawal symptoms.</description>
+    <listPriority>50</listPriority>
+  </NeedDef>
+
+  <HediffDef ParentName="DrugToleranceBase">
+    <defName>HormonalSerumTolerance</defName>
+    <label>hormonal serum tolerance</label>
+    <description>Description text</description>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.015</severityPerDay>
+      </li>
+      <li Class="HediffCompProperties_DrugEffectFactor">
+        <chemical>HormonalSerum</chemical>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <HediffDef ParentName="AddictionBase">
+    <defName>HormonalSerumAddiction</defName>
+    <hediffClass>Hediff_Addiction</hediffClass>
+    <label>hormonal serum addiction</label>
+    <causesNeed>Chemical_HormonalSerum</causesNeed>
+    <description>Description text</description>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.0333</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+      </li>
+      <li>
+        <label>withdrawal</label>
+        <restFallFactorOffset>0.3</restFallFactorOffset>
+        <socialFightChanceFactor>3.0</socialFightChanceFactor>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.15</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.5</offset>
+          </li>
+        </capMods>
+        <mentalStateGivers>
+          <li>
+            <mentalState>Binging_DrugExtreme</mentalState>
+            <mtbDays>40</mtbDays>
+          </li>
+          <li>
+            <mentalState>Wander_Psychotic</mentalState>
+            <mtbDays>10</mtbDays>
+          </li>
+        </mentalStateGivers>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThoughtDef>
+    <defName>HormonalSerumWithdrawal</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>HormonalSerumAddiction</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <visible>false</visible>
+      </li>
+      <li>
+        <label>hormonal serum withdrawal</label>
+        <description>My body feels awful... I wish to warp it; to enjoy such debauched pleasure again.</description>
+        <baseMoodEffect>-20</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThingDef ParentName="LL_SerumBase">
+    <defName>HormonalSerum</defName>
+    <label>hormonal serum</label>
+    <description>Hormonal serum. Can be consumed for some pleasure, but mostly used to manufacture other drugs.</description>
+    <recipeMaker>
+      <researchPrerequisite>HormonalSerums</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+      <workSkill>Intellectual</workSkill>
+      <skillRequirements>
+        <Intellectual>3</Intellectual>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <PsychoidLeaves>3</PsychoidLeaves>
+      <HumpShroom>1</HumpShroom>
+      <Neutroamine>1</Neutroamine>
+    </costList>
+    <statBases>
+      <MarketValue>30</MarketValue>
+    </statBases>
+    <ingestible>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>HormonalSerumHigh</hediffDef>
+          <severity>0.25</severity>
+          <toleranceChemical>HormonalSerum</toleranceChemical>
+        </li>
+        <li Class="IngestionOutcomeDoer_OffsetNeed">
+          <need>Sex</need>
+          <offset>-0.25</offset>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>HormonalSerumHigh</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>hormonal warp</label>
+    <labelNoun>hormonal warmth</labelNoun>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <description>Description text</description>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-3.0</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <minSeverity>0.10</minSeverity>
+        <painFactor>0.8</painFactor>
+        <restFallFactor>0.8</restFallFactor>
+      </li>
+      <li>
+        <minSeverity>0.25</minSeverity>
+        <painFactor>0.5</painFactor>
+        <restFallFactor>0.7</restFallFactor>
+      </li>
+      <li>
+        <minSeverity>0.70</minSeverity>
+        <painFactor>0.3</painFactor>
+        <restFallFactor>1.2</restFallFactor>
+      </li>
+      <li>
+        <minSeverity>0.85</minSeverity>
+        <painFactor>1.25</painFactor>
+        <restFallFactor>1.3</restFallFactor>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThoughtDef>
+    <defName>HormonalSerumHigh</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>HormonalSerumHigh</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>feeling pleasantly frisky</label>
+        <description>Mmm... I'm feeling... warm.</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+      <li>
+        <label>feeling passionately ardent</label>
+        <description>Ohh~ That feels good.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+      <li>
+        <label>horomonally drugged</label>
+        <description>*panting*</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+      <li>
+        <label>horomonal imbalance</label>
+        <description>Why do I feel like this?</description>
+        <baseMoodEffect>-15</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

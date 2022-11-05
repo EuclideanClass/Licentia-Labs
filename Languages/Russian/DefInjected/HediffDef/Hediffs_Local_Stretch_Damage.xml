@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<Prolapse.label>пролапс</Prolapse.label>
+	<Prolapse.description>Внутренняя часть этого отверстия была временно вывернута, обнажая нежную внутреннюю плоть. Интимная деятельность может быть затруднена какое-то время.</Prolapse.description>
+	<Prolapse.stages.0.label>восстановление</Prolapse.stages.0.label>
+	<Prolapse.stages.1.label>болезненный</Prolapse.stages.1.label>
+	<Prolapse.labelNoun>пролапс</Prolapse.labelNoun>
+
+	<ExtremeProlapse.label>пролапс</ExtremeProlapse.label>
+	<ExtremeProlapse.description>Внутренняя часть этого отверстия была ужасно вывернута, обнажая нежную внутреннюю плоть. Интимная деятельность может быть невозможна, пока она не будет восстановлена хирургическим путем.</ExtremeProlapse.description>
+	<ExtremeProlapse.stages.0.label>требуется лечение</ExtremeProlapse.stages.0.label>
+	<ExtremeProlapse.labelNoun>экстремальный пролапс</ExtremeProlapse.labelNoun>
+
+	<StretchTear.label>разрыв</StretchTear.label>
+	<StretchTear.description>Секс с большими проникающими предметами с меньшимими отверстиям может привести к болезненному разрыву.</StretchTear.description>
+	<StretchTear.comps.0.labelTendedWell>зашитый</StretchTear.comps.0.labelTendedWell>
+	<StretchTear.comps.0.labelTendedWellInner>зашитый</StretchTear.comps.0.labelTendedWellInner>
+	<StretchTear.comps.0.labelSolidTendedWell>set</StretchTear.comps.0.labelSolidTendedWell>
+	<StretchTear.injuryProps.destroyedLabel>порванный</StretchTear.injuryProps.destroyedLabel>
+	<StretchTear.injuryProps.destroyedOutLabel>порванный</StretchTear.injuryProps.destroyedOutLabel>
+	<StretchTear.labelNoun>разрыв</StretchTear.labelNoun>
+
+	<CervixBruise.label>шейка матки пробита</CervixBruise.label>
+	<CervixBruise.description>Синяк на шейке матки.</CervixBruise.description>
+	<CervixBruise.comps.0.labelTendedWell>ухоженный</CervixBruise.comps.0.labelTendedWell>
+	<CervixBruise.comps.0.labelTendedWellInner>ухоженный</CervixBruise.comps.0.labelTendedWellInner>
+	<CervixBruise.comps.0.labelSolidTendedWell>set</CervixBruise.comps.0.labelSolidTendedWell>
+	<CervixBruise.injuryProps.destroyedLabel>уничтоженный</CervixBruise.injuryProps.destroyedLabel>
+	<CervixBruise.labelNoun>синяк на шейке матки</CervixBruise.labelNoun>
+
+
+</LanguageData>

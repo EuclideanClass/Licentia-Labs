@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<MutatedParts.label>мутировавшие части</MutatedParts.label>
+	<MutatedParts.description>Description text</MutatedParts.description>
+	<MutatedParts.stages.0.label>возбужденный</MutatedParts.stages.0.label>
+	<MutatedParts.stages.1.label>растущий</MutatedParts.stages.1.label>
+	<MutatedParts.labelNoun>мутировавшие части</MutatedParts.labelNoun>
+
+
+</LanguageData>

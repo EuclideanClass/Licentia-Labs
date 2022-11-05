@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <rjw.RaceGroupDef>
+    <defName>Humans</defName>
+    <raceNames>
+      <li>Human</li>
+    </raceNames>
+    <femaleGenitals>
+      <li>Vagina</li>
+    </femaleGenitals>
+    <maleGenitals>
+      <li>Penis</li>
+    </maleGenitals>
+    <femaleBreasts>
+      <li>Breasts</li>
+    </femaleBreasts>
+    <maleBreasts>
+      <li>Breasts</li>
+    </maleBreasts>
+    <anuses>
+      <li>Anus</li>
+    </anuses>
+    <hasSexNeed>true</hasSexNeed>
+    <hasFertility>true</hasFertility>
+    <hasPregnancy>true</hasPregnancy>
+  </rjw.RaceGroupDef>
+
+</Defs>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<GenderBendSerum.label>сыворотка гендербенда</GenderBendSerum.label>
+	<GenderBendSerum.description>Меняет пенисы на вагины и добавляет или удаляет грудь.</GenderBendSerum.description>
+	<GenderBendSerum.ingestible.ingestCommandString>Выпить {0}</GenderBendSerum.ingestible.ingestCommandString>
+	<GenderBendSerum.ingestible.ingestReportString>Пьет {0}</GenderBendSerum.ingestible.ingestReportString>
+
+	<FutaSerum.label>сыворотка футы</FutaSerum.label>
+	<FutaSerum.description>Делает пользователя фута, если он еще этого не сделал.</FutaSerum.description>
+	<FutaSerum.ingestible.ingestCommandString>Выпить {0}</FutaSerum.ingestible.ingestCommandString>
+	<FutaSerum.ingestible.ingestReportString>Пьет {0}</FutaSerum.ingestible.ingestReportString>
+
+
+</LanguageData>

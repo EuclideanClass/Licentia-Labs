@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+  <!-- Counts number of times cumstuffed -->
+  <RecordDef>
+    <defName>AmountOfCumstuffed</defName>
+    <label>amount of cum drank</label>
+    <description>The number of cum units I have drank.</description>
+    <type>Int</type>
+  </RecordDef>
+
+  <!-- Counts number of times cumflated -->
+  <RecordDef>
+    <defName>AmountOfCumflation</defName>
+    <label>amount of cum inflated</label>
+    <description>The number of cum units I've had shoved inside me.</description>
+    <type>Int</type>
+  </RecordDef>
+
+</Defs>

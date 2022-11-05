@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>RepairProlapse</defName>
+    <label>repair prolapse</label>
+    <description>Repair a prolapse.</description>
+    <workerClass>Recipe_RemoveHediff</workerClass>
+    <jobString>Repairing prolapse.</jobString>
+    <workAmount>3000</workAmount>
+    <removesHediff>Prolapse</removesHediff>
+    <successfullyRemovedHediffMessage>{0} has successfully repaired {1}'s prolapse.</successfullyRemovedHediffMessage>
+    <deathOnFailedSurgeryChance>0.002</deathOnFailedSurgeryChance>
+    <skillRequirements>
+      <Medicine>6</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>RepairExtremeProlapse</defName>
+    <label>repair extreme prolapse</label>
+    <description>Surgically repair a prolapse.</description>
+    <workerClass>Recipe_RemoveHediff</workerClass>
+    <jobString>Repairing prolapse.</jobString>
+    <workAmount>3000</workAmount>
+    <removesHediff>ExtremeProlapse</removesHediff>
+    <successfullyRemovedHediffMessage>{0} has successfully repaired {1}'s prolapse.</successfullyRemovedHediffMessage>
+    <deathOnFailedSurgeryChance>0.002</deathOnFailedSurgeryChance>
+    <skillRequirements>
+      <Medicine>8</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <disallowedThingDefs>
+        <li>MedicineHerbal</li>
+      </disallowedThingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+</Defs>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <RecipeDef>
+    <defName>CraftBulkHormomalSerum</defName>
+    <label>Craft hormonal serum in bulk</label>
+    <description>Craft hormonal serum in bulk.</description>
+    <jobString>Crafting hormonal serum in bulk.</jobString>
+    <workAmount>1000</workAmount>
+    <researchPrerequisite>HormonalSerums</researchPrerequisite>
+    <recipeUsers>
+      <li>DrugLab</li>
+    </recipeUsers>
+    <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+    <workSkill>Intellectual</workSkill>
+    <skillRequirements>
+      <Intellectual>5</Intellectual>
+    </skillRequirements>
+    <products>
+      <HormonalSerum>15</HormonalSerum>
+    </products>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>PsychoidLeaves</li>
+          </thingDefs>
+        </filter>
+        <count>45</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>HumpShroom</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+    </ingredients>
+  </RecipeDef>
+
+</Defs>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ThingCategoryDef>
+    <defName>Serums</defName>
+    <label>serums</label>
+    <parent>Drugs</parent>
+    <iconPath>UI/Icons/ThingCategories/Drugs</iconPath>
+  </ThingCategoryDef>
+
+</Defs>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThoughtDef>
+    <defName>GotStretched</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>3.0</durationDays>
+    <stackLimit>5</stackLimit>
+    <stackedEffectMultiplier>0.4</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>sore from stretching</label>
+        <description>Oww. That was a lot to take...</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+    <nullifyingTraits>
+      <li>Masochist</li>
+    </nullifyingTraits>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>MasochistGotStretched</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>3.0</durationDays>
+    <stackLimit>5</stackLimit>
+    <stackedEffectMultiplier>0.7</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>sore from stretching (Masochist)</label>
+        <description>Oww. I was stuffed so painfully full. I want more.</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+    </stages>
+    <requiredTraits>
+      <li>Masochist</li>
+    </requiredTraits>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>KinkyGotStretched</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>3.0</durationDays>
+    <stackLimit>5</stackLimit>
+    <stackedEffectMultiplier>0.7</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>sore from stretching</label>
+        <description>Oww. That was a lot to take... but I kinda liked it.</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>KinkyGotInflated</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>3.0</durationDays>
+    <stackLimit>5</stackLimit>
+    <stackedEffectMultiplier>0.7</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>cumflated</label>
+        <description>I'm so full. I'm kinda into it.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

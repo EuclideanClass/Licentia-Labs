@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="LL_SerumBase">
+    <defName>GenderBendSerum</defName>
+    <label>genderbend serum</label>
+    <description>Swaps penises to vaginas and adds or removes breasts.</description>
+    <graphicData>
+      <color>(140,100,170)</color>
+    </graphicData>
+    <recipeMaker>
+      <researchPrerequisite>GenderChangeSerums</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+      <workSkill>Intellectual</workSkill>
+      <skillRequirements>
+        <Intellectual>6</Intellectual>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <HormonalSerum>80</HormonalSerum>
+    </costList>
+    <statBases>
+      <MarketValue>2400</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="LicentiaLabs.CompProperties_Genderbend"/>
+    </comps>
+    <ingestible>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>Genderbent</hediffDef>
+          <severity>1</severity>
+          <toleranceChemical>HormonalSerum</toleranceChemical>
+        </li>
+        <li Class="IngestionOutcomeDoer_OffsetNeed">
+          <need>Sex</need>
+          <offset>-0.35</offset>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+  </ThingDef>
+
+  <ThingDef ParentName="LL_SerumBase">
+    <defName>FutaSerum</defName>
+    <label>futa serum</label>
+    <description>Makes the user a futa if they aren't already.</description>
+    <graphicData>
+      <color>(140,100,170)</color>
+    </graphicData>
+    <recipeMaker>
+      <researchPrerequisite>GenderChangeSerums</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+      <workSkill>Intellectual</workSkill>
+      <skillRequirements>
+        <Intellectual>6</Intellectual>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <HormonalSerum>160</HormonalSerum>
+    </costList>
+    <statBases>
+      <MarketValue>4800</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="LicentiaLabs.CompProperties_FutaSerum"/>
+    </comps>
+    <ingestible>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>Genderbent</hediffDef>
+          <severity>1</severity>
+          <toleranceChemical>HormonalSerum</toleranceChemical>
+        </li>
+        <li Class="IngestionOutcomeDoer_OffsetNeed">
+          <need>Sex</need>
+          <offset>-0.35</offset>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>Genderbent</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <description>Description text</description>
+    <label>genderbent</label>
+    <labelNoun>genderbent</labelNoun>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.25</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>needs change</label>
+        <statOffsets>
+          <SexFrequency>-0.5</SexFrequency>
+        </statOffsets>
+      </li>
+      <li>
+        <label>acclimated</label>
+        <minSeverity>0.1</minSeverity>
+      </li>
+      <li>
+        <label>horny</label>
+        <minSeverity>0.70</minSeverity>
+        <statOffsets>
+          <SexFrequency>0.3</SexFrequency>
+          <Vulnerability>0.2</Vulnerability>
+        </statOffsets>
+      </li>
+      <li>
+        <label>confused</label>
+        <minSeverity>0.95</minSeverity>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThoughtDef>
+    <defName>Genderbent</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>Genderbent</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>feeling uneasy</label>
+        <description>I tire of this altered body.</description>
+        <baseMoodEffect>15</baseMoodEffect>
+      </li>
+      <li>
+        <label>acclimated</label>
+        <description>I've adapted to my new body.</description>
+        <baseMoodEffect>25</baseMoodEffect>
+      </li>
+      <li>
+        <label>genderbent</label>
+        <description>I feel so lovely and warm... and these new parts! I must try them!</description>
+        <baseMoodEffect>30</baseMoodEffect>
+      </li>
+      <li>
+        <label>genderbent confusion</label>
+        <description>What's happening to me? I feel all warped inside.</description>
+        <baseMoodEffect>15</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

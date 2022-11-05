@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<HormonalSerumTolerance.label>толерантность к гормональной сыворотке</HormonalSerumTolerance.label>
+	<HormonalSerumTolerance.description>Толерантность к гормональной сыворотке. Чем она серьёзнее, тем больше потребуется сласти для получения первоначального эффекта.</HormonalSerumTolerance.description>
+
+	<HormonalSerumAddiction.label>зависимость от гормональной сыворотки</HormonalSerumAddiction.label>
+	<HormonalSerumAddiction.description>Зависимость от гормональной сыворотки. Его продолжительное упортребление вызывает неврологические изменения на клеточном уровне, из-за чего мозг уже не способен нормально функционировать без вещества.\nПерерыв в регулярном употреблении сыворотки вызовет абстинентный синдром - ломку. Длительное воздержание поможет мозгу вернуться к нормальному состоянию и избавиться от зависимости..</HormonalSerumAddiction.description>
+	<HormonalSerumAddiction.stages.1.label>ломка</HormonalSerumAddiction.stages.1.label>
+
+	<HormonalSerumHigh.label>гормональная деформация</HormonalSerumHigh.label>
+	<HormonalSerumHigh.description>Description text</HormonalSerumHigh.description>
+	<HormonalSerumHigh.labelNoun>гормональное тепло</HormonalSerumHigh.labelNoun>
+
+
+</LanguageData>

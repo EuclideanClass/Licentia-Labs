@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="LL_PsycheSerumBase"
+            ParentName="LL_SerumBase"
+            Abstract="True">
+    <recipeMaker>
+      <researchPrerequisite>PsycheSerums</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+      <workSkill>Intellectual</workSkill>
+      <skillRequirements>
+        <Intellectual>10</Intellectual>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <HormonalSerum>120</HormonalSerum>
+    </costList>
+    <statBases>
+      <MarketValue>3600</MarketValue>
+    </statBases>
+    <graphicData>
+      <color>(240,60,150)</color>
+    </graphicData>
+    <ingestible>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>AlteredPsyche</hediffDef>
+          <severity>1</severity>
+          <toleranceChemical>HormonalSerum</toleranceChemical>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+  </ThingDef>
+
+  <ThingDef ParentName="LL_PsycheSerumBase">
+    <defName>MasochistPsycheSerum</defName>
+    <label>masochist serum</label>
+    <description>Makes the user a masochist.</description>
+    <comps>
+      <li Class="LicentiaLabs.CompProperties_TraitSerum">
+        <addTrait>Masochist</addTrait>
+        <replaceTrait>true</replaceTrait>
+        <removeTrait>Rapist</removeTrait>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="LL_PsycheSerumBase">
+    <defName>NymphomaniacPsycheSerum</defName>
+    <label>hypersexuality serum</label>
+    <description>Makes the user gain hypersexuality.</description>
+    <comps>
+      <li Class="LicentiaLabs.CompProperties_TraitSerum">
+        <addTrait>Nymphomaniac</addTrait>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="LL_PsycheSerumBase">
+    <defName>NecrophiliacPsycheSerum</defName>
+    <label>necrophiliac serum</label>
+    <description>Makes the user a necrophiliac.</description>
+    <comps>
+      <li Class="LicentiaLabs.CompProperties_TraitSerum">
+        <addTrait>Necrophiliac</addTrait>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="LL_PsycheSerumBase">
+    <defName>ZoophilePsycheSerum</defName>
+    <label>zoophile serum</label>
+    <description>Makes the user a zoophile.</description>
+    <comps>
+      <li Class="LicentiaLabs.CompProperties_TraitSerum">
+        <addTrait>Zoophile</addTrait>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="LL_PsycheSerumBase">
+    <defName>CumflationPsycheSerum</defName>
+    <label>cumflation trait serum</label>
+    <description>Makes the user enjoy cumflation.</description>
+    <comps>
+      <li Class="LicentiaLabs.CompProperties_TraitSerum">
+        <addTrait>LikesCumflation</addTrait>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="LL_PsycheSerumBase">
+    <defName>AntiMasochistPsycheSerum</defName>
+    <label>anti-masochist serum</label>
+    <description>Makes the user no longer a masochist.</description>
+    <comps>
+      <li Class="LicentiaLabs.CompProperties_TraitSerum">
+        <removeTrait>Masochist</removeTrait>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="LL_PsycheSerumBase">
+    <defName>AntiNymphomaniacPsycheSerum</defName>
+    <label>anti-hypersexuality serum</label>
+    <description>Makes the user lose their hypersexuality.</description>
+    <comps>
+      <li Class="LicentiaLabs.CompProperties_TraitSerum">
+        <removeTrait>Nymphomaniac</removeTrait>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="LL_PsycheSerumBase">
+    <defName>AntiNecrophiliacPsycheSerum</defName>
+    <label>anti-necrophiliac serum</label>
+    <description>Makes the user no longer a necrophiliac.</description>
+    <comps>
+      <li Class="LicentiaLabs.CompProperties_TraitSerum">
+        <removeTrait>Necrophiliac</removeTrait>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="LL_PsycheSerumBase">
+    <defName>AntiZoophilePsycheSerum</defName>
+    <label>anti-zoophile serum</label>
+    <description>Makes the user no longer a zoophile.</description>
+    <comps>
+      <li Class="LicentiaLabs.CompProperties_TraitSerum">
+        <removeTrait>Zoophile</removeTrait>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="LL_PsycheSerumBase">
+    <defName>AntiCumflationPsycheSerum</defName>
+    <label>anti-cumflation trait serum</label>
+    <description>Makes the user no longer enjoy cumflation.</description>
+    <comps>
+      <li Class="LicentiaLabs.CompProperties_TraitSerum">
+        <removeTrait>LikesCumflation</removeTrait>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>AlteredPsyche</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <description>Description text</description>
+    <label>altered psyche</label>
+    <labelNoun>altered psyche</labelNoun>
+    <defaultLabelColor>(240,60,150)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.1</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>adjusted</label>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.05</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>dazed</label>
+        <minSeverity>0.5</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.10</offset>
+          </li>
+        </capMods>
+        <statOffsets>
+          <Vulnerability>0.1</Vulnerability>
+        </statOffsets>
+      </li>
+      <li>
+        <label>confused</label>
+        <minSeverity>0.80</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.20</offset>
+          </li>
+        </capMods>
+        <statOffsets>
+          <Vulnerability>0.3</Vulnerability>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThoughtDef>
+    <defName>AlteredPsyche</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>AlteredPsyche</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li/>
+      <li>
+        <label>dazed</label>
+        <description>I'm feeling better, but still off.</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+      <li>
+        <label>confused</label>
+        <description>My thoughts are all strange.</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

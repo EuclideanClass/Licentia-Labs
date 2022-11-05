@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<Stretched.label>растянуто</Stretched.label>
+	<Stretched.description>Введение предметов, слишком больших для отверстия, может вызвать болезненное растяжение. Со временем растяжка исчезнет.</Stretched.description>
+	<Stretched.stages.0.label>воспаленный</Stretched.stages.0.label>
+	<Stretched.stages.1.label>болезненный</Stretched.stages.1.label>
+	<Stretched.labelNoun>мутировавшие части</Stretched.labelNoun>
+
+
+</LanguageData>

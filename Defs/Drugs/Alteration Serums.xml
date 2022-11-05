@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="LL_SerumBase">
+    <defName>BreastExpansionSerum</defName>
+    <label>breast expansion serum</label>
+    <description>Increases the user's breast size.</description>
+    <graphicData>
+      <color>(140,0,0)</color>
+    </graphicData>
+    <recipeMaker>
+      <researchPrerequisite>BasicSerums</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+      <workSkill>Intellectual</workSkill>
+      <skillRequirements>
+        <Intellectual>5</Intellectual>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <MarketValue>900</MarketValue>
+    </statBases>
+    <costList>
+      <HormonalSerum>30</HormonalSerum>
+    </costList>
+    <comps>
+      <li Class="LicentiaLabs.CompProperties_BreastIncrease"/>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="LL_SerumBase">
+    <defName>BreastReductionSerum</defName>
+    <label>breast reduction serum</label>
+    <description>Decreases the user's breast size.</description>
+    <graphicData>
+      <color>(140,0,0)</color>
+    </graphicData>
+    <recipeMaker>
+      <researchPrerequisite>BasicSerums</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+      <workSkill>Intellectual</workSkill>
+      <skillRequirements>
+        <Intellectual>5</Intellectual>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <MarketValue>900</MarketValue>
+    </statBases>
+    <costList>
+      <HormonalSerum>30</HormonalSerum>
+    </costList>
+    <comps>
+      <li Class="LicentiaLabs.CompProperties_BreastDecrease"/>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="LL_SerumBase">
+    <defName>GenitalExtrusionSerum</defName>
+    <label>genital extrusion serum</label>
+    <description>Increases the size of the user's penis. Alternatively, it will decrease the size of a vagina.</description>
+    <graphicData>
+      <color>(140,0,0)</color>
+    </graphicData>
+    <recipeMaker>
+      <researchPrerequisite>BasicSerums</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+      <workSkill>Intellectual</workSkill>
+      <skillRequirements>
+        <Intellectual>5</Intellectual>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <MarketValue>1500</MarketValue>
+    </statBases>
+    <costList>
+      <HormonalSerum>50</HormonalSerum>
+    </costList>
+    <comps>
+      <li Class="LicentiaLabs.CompProperties_GenitalIncrease"/>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="LL_SerumBase">
+    <defName>GenitalRetractionSerum</defName>
+    <label>genital retraction serum</label>
+    <description>Decreases the size of the user's penis. Alternatively, it will increase the size of a vagina.</description>
+    <graphicData>
+      <color>(140,0,0)</color>
+    </graphicData>
+    <recipeMaker>
+      <researchPrerequisite>BasicSerums</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+      <workSkill>Intellectual</workSkill>
+      <skillRequirements>
+        <Intellectual>5</Intellectual>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <MarketValue>1500</MarketValue>
+    </statBases>
+    <costList>
+      <HormonalSerum>50</HormonalSerum>
+    </costList>
+    <comps>
+      <li Class="LicentiaLabs.CompProperties_GenitalDecrease"/>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="LL_SerumBase">
+    <defName>CumIncreaseSerum</defName>
+    <label>Cum+ serum</label>
+    <description>Increases the ammount of cum production.</description>
+    <graphicData>
+      <color>(140,0,0)</color>
+    </graphicData>
+    <recipeMaker>
+      <researchPrerequisite>BasicSerums</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+      <workSkill>Intellectual</workSkill>
+      <skillRequirements>
+        <Intellectual>5</Intellectual>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <MarketValue>1500</MarketValue>
+    </statBases>
+    <costList>
+      <HormonalSerum>50</HormonalSerum>
+    </costList>
+    <comps>
+      <li Class="LicentiaLabs.CompProperties_CumIncrease"/>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="LL_SerumBase">
+    <defName>CumDecreaseSerum</defName>
+    <label>Cum- serum</label>
+    <description>Decreases the ammount of cum production.</description>
+    <graphicData>
+      <color>(140,0,0)</color>
+    </graphicData>
+    <recipeMaker>
+      <researchPrerequisite>BasicSerums</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+      <workSkill>Intellectual</workSkill>
+      <skillRequirements>
+        <Intellectual>5</Intellectual>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <MarketValue>1500</MarketValue>
+    </statBases>
+    <costList>
+      <HormonalSerum>50</HormonalSerum>
+    </costList>
+    <comps>
+      <li Class="LicentiaLabs.CompProperties_CumDecrease"/>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="LL_SerumBase">
+    <defName>TighteningSerumAnal</defName>
+    <label>anal tightening serum</label>
+    <description>Tightens up the user's anus...</description>
+    <recipeMaker>
+      <researchPrerequisite>BasicSerums</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+      <workSkill>Intellectual</workSkill>
+      <skillRequirements>
+        <Intellectual>6</Intellectual>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <MarketValue>1500</MarketValue>
+    </statBases>
+    <costList>
+      <HormonalSerum>50</HormonalSerum>
+    </costList>
+    <graphicData>
+      <color>(100,220,100)</color>
+    </graphicData>
+    <comps>
+      <li Class="LicentiaLabs.CompProperties_AnalTighteningSerum"/>
+    </comps>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchTabDef>
+    <defName>LicentiaLabs</defName>
+    <label>Licentia Labs</label>
+  </ResearchTabDef>
+  
+  <ResearchProjectDef>
+    <defName>HormonalSerums</defName>
+    <label>hormonal serums</label>
+    <description>Learn how to process humpshroom and psychoid leaves into a hormonal serum for altering the body.</description>
+    <tab>LicentiaLabs</tab>
+    <baseCost>400</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>DrugProduction</li>
+    </prerequisites>
+    <researchViewX>0</researchViewX>
+    <researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>BasicSerums</defName>
+    <label>alteration serums</label>
+    <description>Learn how to make serums capable of altering body.</description>
+    <tab>LicentiaLabs</tab>
+    <baseCost>600</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>HormonalSerums</li>
+    </prerequisites>
+    <researchViewX>1</researchViewX>
+    <researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>MutagenicSerums</defName>
+    <label>mutagenic serums</label>
+    <description>Learn to create advanced serums capable of altering body parts to those of other species.</description>
+    <tab>LicentiaLabs</tab>
+    <baseCost>1000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>BasicSerums</li>
+    </prerequisites>
+    <researchViewX>2</researchViewX>
+    <researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>GenderChangeSerums</defName>
+    <label>gender alteration serums</label>
+    <description>Learn to create advanced serums capable of altering genders.</description>
+    <tab>LicentiaLabs</tab>
+    <baseCost>1000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>BasicSerums</li>
+    </prerequisites>
+    <researchViewX>2</researchViewX>
+    <researchViewY>1</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>PsycheSerums</defName>
+    <label>psyche serums</label>
+    <description>Learn to create serums capable of changing the traits of a user.</description>
+    <tab>LicentiaLabs</tab>
+    <baseCost>1000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>HormonalSerums</li>
+    </prerequisites>
+    <researchViewX>1</researchViewX>
+    <researchViewY>1</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>ReverterSerum</defName>
+    <label>reverter serum</label>
+    <description>Learn to create a reverter serum to revert mutated body parts.</description>
+    <tab>LicentiaLabs</tab>
+    <baseCost>200</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>MutagenicSerums</li>
+    </prerequisites>
+    <researchViewX>3</researchViewX>
+    <researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>ProducingSerum</defName>
+    <label>producing serum</label>
+    <description>Learn to create a producing serum that alters body to produce hormonal serum.</description>
+    <tab>LicentiaLabs</tab>
+    <baseCost>2000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>MutagenicSerums</li>
+    </prerequisites>
+    <researchViewX>3</researchViewX>
+    <researchViewY>1</researchViewY>
+  </ResearchProjectDef>
+
+</Defs>

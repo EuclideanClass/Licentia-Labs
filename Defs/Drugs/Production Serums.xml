@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="LL_SerumBase">
+    <defName>ProductionSerum</defName>
+    <label>production serum</label>
+    <description>Makes the user produce hormonal serum every few days. Can cause mild mood issues.</description>
+    <recipeMaker>
+      <researchPrerequisite>ProducingSerum</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+      <workSkill>Intellectual</workSkill>
+      <skillRequirements>
+        <Intellectual>12</Intellectual>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <MarketValue>3600</MarketValue>
+    </statBases>
+    <costList>
+      <HormonalSerum>120</HormonalSerum>
+    </costList>
+    <graphicData>
+      <color>(0,10,80)</color>
+    </graphicData>
+    <ingestible>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>ProducingHormonalSerum</hediffDef>
+          <severity>0</severity>
+          <toleranceChemical>HormonalSerum</toleranceChemical>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>ProducingHormonalSerum</defName>
+    <description>Description text</description>
+    <hediffClass>LicentiaLabs.Hediff_ProducingHormonalSerum</hediffClass>
+    <label>producing serum</label>
+    <labelNoun>producing serum</labelNoun>
+    <defaultLabelColor>(202,202,218)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>0.5</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>empty</label>
+      </li>
+      <li>
+        <label>producing</label>
+        <minSeverity>0.1</minSeverity>
+      </li>
+      <li>
+        <label>full</label>
+        <minSeverity>0.90</minSeverity>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThoughtDef>
+    <defName>ProducingHormonalSerum</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>ProducingHormonalSerum</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <visible>false</visible>
+      </li>
+      <li>
+        <visible>false</visible>
+      </li>
+      <li>
+        <label>hormonal</label>
+        <description>I'm such a mess.</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

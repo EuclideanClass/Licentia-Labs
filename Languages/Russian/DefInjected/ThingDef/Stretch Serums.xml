@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<ElasticisingSerum.label>эластичная сыворотка</ElasticisingSerum.label>
+	<ElasticisingSerum.description>Делает отверстия пользователя эластичными.</ElasticisingSerum.description>
+	<ElasticisingSerum.ingestible.ingestCommandString>Выпить {0}</ElasticisingSerum.ingestible.ingestCommandString>
+	<ElasticisingSerum.ingestible.ingestReportString>Пьет {0}</ElasticisingSerum.ingestible.ingestReportString>
+
+	<EnlargingSerum.label>увеличивающая сыворотка</EnlargingSerum.label>
+	<EnlargingSerum.description>Временно увеличивает гениталии.</EnlargingSerum.description>
+	<EnlargingSerum.ingestible.ingestCommandString>Выпить {0}</EnlargingSerum.ingestible.ingestCommandString>
+	<EnlargingSerum.ingestible.ingestReportString>Пьет {0}</EnlargingSerum.ingestible.ingestReportString>
+
+	<DiminishingSerum.label>уменьшающая сыворотка</DiminishingSerum.label>
+	<DiminishingSerum.description>Временно уменьшает гениталии.</DiminishingSerum.description>
+	<DiminishingSerum.ingestible.ingestCommandString>Выпить {0}</DiminishingSerum.ingestible.ingestCommandString>
+	<DiminishingSerum.ingestible.ingestReportString>Пьет {0}</DiminishingSerum.ingestible.ingestReportString>
+
+	<ReinforcingSerum.label>укрепляющая сыворотка</ReinforcingSerum.label>
+	<ReinforcingSerum.description>Делает отверстия пользователя не рвущимися, но растягиваемыми.</ReinforcingSerum.description>
+	<ReinforcingSerum.ingestible.ingestCommandString>Выпить {0}</ReinforcingSerum.ingestible.ingestCommandString>
+	<ReinforcingSerum.ingestible.ingestReportString>Пьет {0}</ReinforcingSerum.ingestible.ingestReportString>
+
+
+</LanguageData>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<HormonalSerum.label>гормональная сыворотка</HormonalSerum.label>
+	<HormonalSerum.description>Гормональная сыворотка. Можно употреблять для удовольствия, но в основном используется для производства других наркотиков.</HormonalSerum.description>
+	<HormonalSerum.ingestible.ingestCommandString>Выпить {0}</HormonalSerum.ingestible.ingestCommandString>
+	<HormonalSerum.ingestible.ingestReportString>Пьет {0}</HormonalSerum.ingestible.ingestReportString>
+
+
+</LanguageData>

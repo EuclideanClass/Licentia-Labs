@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <HediffDef>
+    <defName>Stretched</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <description>Insertion of objects that are too large for an orifice can cause stretching, which is painful. Over time, the stretching will fade.</description>
+    <label>stretched</label>
+    <labelNoun>mutated parts</labelNoun>
+    <defaultLabelColor>(140,0,0)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.25</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>sore</label>
+        <statOffsets>
+          <!-- <SexAbility>-0.05</SexAbility> -->
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.05</offset>
+          </li>
+        </capMods>
+        <painOffset>0.05</painOffset>
+      </li>
+      <li>
+        <label>painful</label>
+        <minSeverity>0.25</minSeverity>
+        <statOffsets>
+          <!-- <SexAbility>-0.2</SexAbility> -->
+          <Vulnerability>-0.1</Vulnerability>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.20</offset>
+          </li>
+        </capMods>
+        <painOffset>0.1</painOffset>
+      </li>
+    </stages>
+  </HediffDef>
+
+</Defs>

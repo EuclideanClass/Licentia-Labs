@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<LL_BreastsSizeIncrease>Грудь {0} увеличилась в размерах.</LL_BreastsSizeIncrease>
+	<LL_BreastsSizeDecrease>Грудь {0} уменьшилась в размерах.</LL_BreastsSizeDecrease>
+	<LL_BreastsMaxSize>Грудь {0} уже достигла максимального размера.</LL_BreastsMaxSize>
+	<LL_BreastsMinSize>Грудь {0} уже достигла минимального размера.</LL_BreastsMinSize>
+
+	<LL_PenisSizeIncrease>Пенис {0} увеличился в размерах.</LL_PenisSizeIncrease>
+	<LL_PenisSizeDecrease>Пенис {0} уменьшился в размерах.</LL_PenisSizeDecrease>
+	<LL_PenisMaxSize>Пенис {0} уже достиг максимального размера.</LL_PenisMaxSize>
+	<LL_PenisMinSize>Пенис {0} уже достиг минимального размера.</LL_PenisMinSize>
+
+	<LL_VaginaSizeIncrease>Вагина {0} увеличилась в размерах.</LL_VaginaSizeIncrease>
+	<LL_VaginaSizeDecrease>Вагина {0} уменьшилась в размерах.</LL_VaginaSizeDecrease>
+	<LL_VaginaMaxSize>Вагина {0} уже достигла максимального размера.</LL_VaginaMaxSize>
+	<LL_VaginaMinSize>Вагина {0} уже достигла минимального размера.</LL_VaginaMinSize>
+
+	<LL_AnusMinSize>Анус {0} уже имеет минимальный размер.</LL_AnusMinSize>
+
+	<LL_CumAltered>Производство спермы {0} было изменено.</LL_CumAltered>
+	<LL_GenitalsAltered>Гениталии {0} изменены.</LL_GenitalsAltered>
+	<LL_BreastsAltered>Грудь {0} была изменена.</LL_BreastsAltered>
+	<LL_AnusAltered>Анус {0} изменен.</LL_AnusAltered>
+
+	<LL_GenitalsNotAlterable>Гениталии {0} неизменны.</LL_GenitalsNotAlterable>
+	<LL_BreastsNotAlterable>Грудь {0} неизменна.</LL_BreastsNotAlterable>
+	<LL_AnusNotAlterable>Анус {0} неизменен.</LL_AnusNotAlterable>
+
+	<LL_BreastsSwapped>Грудь {0} поменялась местами(касаемо пола).</LL_BreastsSwapped>
+	<LL_GenitalsSwapped>Гениталии {0} поменялись местами(касаемо пола).</LL_GenitalsSwapped>
+
+	<LL_BreastsReverted>Грудь {0} была восстановлена.</LL_BreastsReverted>
+	<LL_GenitalsReverted>Гениталии {0} восстановлены.</LL_GenitalsReverted>
+	<LL_AnusReverted>Анус {0} восстановлен.</LL_AnusReverted>
+	<LL_Reverted>{0} вернулся к среднему сексуальному телосложению.</LL_Reverted>
+
+	<LL_PsycheAltered>Психика {0} изменилась.</LL_PsycheAltered>
+
+	<LL_VaginaStretched>Вагина {0} была растянута.</LL_VaginaStretched>
+	<LL_AnusStretched>Анус {0} был растянут.</LL_AnusStretched>
+	<LL_OrificeStretched>{1} {0} был растянут.</LL_OrificeStretched>
+
+	<LL_MadeFuta>{0} теперь фута.</LL_MadeFuta>
+
+</LanguageData>

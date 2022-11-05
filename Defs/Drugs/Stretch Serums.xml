@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="LL_SerumBase">
+    <defName>ElasticisingSerum</defName>
+    <label>elasticising serum</label>
+    <description>Makes user's orifices elastic.</description>
+    <graphicData>
+      <color>(100,220,100)</color>
+    </graphicData>
+    <recipeMaker>
+      <researchPrerequisite>BasicSerums</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+      <workSkill>Intellectual</workSkill>
+      <skillRequirements>
+        <Intellectual>5</Intellectual>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <HormonalSerum>3</HormonalSerum>
+    </costList>
+    <ingestible>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>Elasticised</hediffDef>
+          <severity>1</severity>
+          <toleranceChemical>HormonalSerum</toleranceChemical>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>Elasticised</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>elasticised</label>
+    <defaultLabelColor>(100,220,100)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <description>Description text</description>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.2</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>wearing off</label>
+        <statOffsets>
+          <Vulnerability>0.1</Vulnerability>
+        </statOffsets>
+      </li>
+      <li>
+        <label>elastic</label>
+        <minSeverity>0.1</minSeverity>
+      </li>
+      <li>
+        <label>slippery</label>
+        <minSeverity>0.9</minSeverity>
+        <statOffsets>
+          <!-- <SexAbility>-0.1</SexAbility> -->
+          <Vulnerability>-0.2</Vulnerability>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThingDef ParentName="LL_SerumBase">
+    <defName>EnlargingSerum</defName>
+    <label>enlarging serum</label>
+    <description>Temporarily enlarges genitals.</description>
+    <graphicData>
+      <color>(140,0,0)</color>
+    </graphicData>
+    <recipeMaker>
+      <researchPrerequisite>BasicSerums</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+      <workSkill>Intellectual</workSkill>
+      <skillRequirements>
+        <Intellectual>5</Intellectual>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <HormonalSerum>3</HormonalSerum>
+    </costList>
+    <ingestible>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>Enlarged</hediffDef>
+          <severity>1</severity>
+          <toleranceChemical>HormonalSerum</toleranceChemical>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>Enlarged</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>genitals enlarged</label>
+    <defaultLabelColor>(140,0,0)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <description>Description text</description>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>enlarged</label>
+        <statOffsets>
+          <SexFrequency>0.20</SexFrequency>
+          <Vulnerability>0.1</Vulnerability>
+        </statOffsets>
+      </li>
+      <li>
+        <label>engorged</label>
+        <minSeverity>0.9</minSeverity>
+        <statOffsets>
+          <SexFrequency>0.30</SexFrequency>
+          <Vulnerability>-0.1</Vulnerability>
+        </statOffsets>
+        <painOffset>0.03</painOffset>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThingDef ParentName="LL_SerumBase">
+    <defName>DiminishingSerum</defName>
+    <label>diminishing serum</label>
+    <description>Temporarily diminishes genitals.</description>
+    <graphicData>
+      <color>(140,0,0)</color>
+    </graphicData>
+    <recipeMaker>
+      <researchPrerequisite>BasicSerums</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+      <workSkill>Intellectual</workSkill>
+      <skillRequirements>
+        <Intellectual>5</Intellectual>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <HormonalSerum>3</HormonalSerum>
+    </costList>
+    <ingestible>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>Diminished</hediffDef>
+          <severity>1</severity>
+          <toleranceChemical>HormonalSerum</toleranceChemical>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>Diminished</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>genitals diminished</label>
+    <defaultLabelColor>(140,0,0)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <description>Description text</description>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.2</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>diminished</label>
+        <statOffsets>
+          <!-- <SexAbility>-0.50</SexAbility> -->
+          <SexFrequency>-0.50</SexFrequency>
+        </statOffsets>
+      </li>
+      <li>
+        <label>severely diminished</label>
+        <minSeverity>0.8</minSeverity>
+        <statOffsets>
+          <!-- <SexAbility>-1</SexAbility> -->
+          <SexFrequency>-1</SexFrequency>
+          <Vulnerability>-0.3</Vulnerability>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThoughtDef>
+    <defName>Diminished</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>Diminished</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li />
+      <li>
+        <label>genitals diminished</label>
+        <description>I can't believe this...</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+      <li>
+        <label>genitals severely diminished</label>
+        <description>What? What have you done to me?</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+    </stages>
+    <nullifyingTraits>
+      <li>Masochist</li>
+    </nullifyingTraits>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>MasochistDiminished</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>Diminished</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li />
+      <li>
+        <label>genitals diminished (Masochist)</label>
+        <description>Anything to serve...</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+      <li>
+        <label>genitals severely diminished (Masochist)</label>
+        <description>I've been put in my place.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+    <requiredTraits>
+      <li>Masochist</li>
+    </requiredTraits>
+  </ThoughtDef>
+
+  <ThingDef ParentName="LL_SerumBase">
+    <defName>ReinforcingSerum</defName>
+    <label>reinforcing serum</label>
+    <description>Makes user's orifices unable to be torn, but still stretchable.</description>
+    <graphicData>
+      <color>(100,220,100)</color>
+    </graphicData>
+    <recipeMaker>
+      <researchPrerequisite>BasicSerums</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+      <workSkill>Intellectual</workSkill>
+      <skillRequirements>
+        <Intellectual>3</Intellectual>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <MarketValue>600</MarketValue>
+    </statBases>
+    <costList>
+      <HormonalSerum>20</HormonalSerum>
+    </costList>
+    <ingestible>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>Untearable</hediffDef>
+          <severity>1</severity>
+          <toleranceChemical>HormonalSerum</toleranceChemical>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>Untearable</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>un-tearable</label>
+    <defaultLabelColor>(100,220,100)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <description>Description text</description>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.1</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>wearing off</label>
+        <statOffsets>
+          <Vulnerability>0.1</Vulnerability>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>0.1</minSeverity>
+      </li>
+    </stages>
+  </HediffDef>
+
+</Defs>

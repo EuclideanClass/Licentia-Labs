@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+		
+	<!-- Demon -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/rjw.HediffDef_PartBase[defName="DemonTentaclePenis"]</xpath>
+		<value>
+			<comps>
+				<li Class="LicentiaLabs.CompProperties_LicentiaPart">
+					<stretchVariance>0.4</stretchVariance>
+				</li>
+			</comps>
+		</value>
+	</Operation>
+		
+	<!-- Slime -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/rjw.HediffDef_PartBase[defName="SlimeTentacles"]</xpath>
+		<value>
+			<comps>
+				<li Class="LicentiaLabs.CompProperties_LicentiaPart">
+					<stretchVariance>0.4</stretchVariance>
+				</li>
+			</comps>
+		</value>
+	</Operation>
+
+</Patch>

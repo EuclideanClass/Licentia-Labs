@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<HormonalSerums.label>гормональная сыворотка</HormonalSerums.label>
+	<HormonalSerums.description>Узнайте, как превратить гриб-афродизиак и психолистья в гормональную сыворотку для изменения тела.</HormonalSerums.description>
+
+	<BasicSerums.label>сыворотки измения</BasicSerums.label>
+	<BasicSerums.description>Узнайте, как сделать сыворотки, способные изменять тело.</BasicSerums.description>
+
+	<MutagenicSerums.label>мутагенные сыворотки</MutagenicSerums.label>
+	<MutagenicSerums.description>Научитесь создавать передовые сыворотки, способные изменять части тела в части других видов.</MutagenicSerums.description>
+
+	<GenderChangeSerums.label>сыворотки измения пола</GenderChangeSerums.label>
+	<GenderChangeSerums.description>Научитесь создавать передовые сыворотки, способные изменить пол.</GenderChangeSerums.description>
+
+	<PsycheSerums.label>психические сыворотки</PsycheSerums.label>
+	<PsycheSerums.description>Научитесь создавать сыворотки, способные изменить черты характера пользователя.</PsycheSerums.description>
+
+	<ReverterSerum.label>сыворотка возврата</ReverterSerum.label>
+	<ReverterSerum.description>Научитесь создавать сыворотку возврата для восстановления мутировавших частей тела.</ReverterSerum.description>
+
+	<ProducingSerum.label>сыворотка производства</ProducingSerum.label>
+	<ProducingSerum.description>Научитесь создавать сыворотку производства, которая изменяет тело, чтобы производить гормональную сыворотку.</ProducingSerum.description>
+
+
+</LanguageData>

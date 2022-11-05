@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<ProductionSerum.label>производственная сыворотка</ProductionSerum.label>
+	<ProductionSerum.description>Заставляет пользователя производить гормональную сыворотку каждые несколько дней. Может вызвать легкие проблемы с настроением.</ProductionSerum.description>
+	<ProductionSerum.ingestible.ingestCommandString>Выпить {0}</ProductionSerum.ingestible.ingestCommandString>
+	<ProductionSerum.ingestible.ingestReportString>Пьет {0}</ProductionSerum.ingestible.ingestReportString>
+
+
+</LanguageData>
